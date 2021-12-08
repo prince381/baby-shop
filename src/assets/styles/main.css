@@ -133,7 +133,7 @@ a {
     transition-delay: .2s;
 }
 .will-disappear:nth-of-type(2) {
-    transition-delay: .15s;
+    transition-delay: .1s;
 }
 .will-disappear:nth-of-type(1) {
     transition-delay: 0s;
@@ -143,10 +143,10 @@ a {
     transition-delay: 0s;
 }
 .will-disappear.disappear:nth-of-type(2) {
-    transition-delay: .15s;
+    transition-delay: .1s;
 }
 .will-disappear.disappear:nth-of-type(1) {
-    transition-delay: .3s;
+    transition-delay: .2s;
 }
 
 .navlinks.main {
@@ -226,7 +226,7 @@ a {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: all .4s ease 0s;
+    transition: all .3s ease 0s;
 }
 
 #search.appear,
