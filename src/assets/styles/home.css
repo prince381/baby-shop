@@ -1,0 +1,165 @@
+.hero,
+.hero-content {
+    width: 100%;
+    height: 90vh;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+}
+
+.bg-img img {
+    width: 130%;
+    height: 110%;
+    transform: translate(-15%, -5%);
+}
+
+.text-content,
+.bottom-info {
+    position: relative;
+    z-index: 5;
+}
+
+.text-content {
+    color: var(--text-color);
+    top: 20%;
+    left: 5%;
+    padding: 1rem .5rem;
+    width: 90%;
+    max-width: 700px;
+}
+
+.bottom-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: rgba(255, 255, 255, .6);
+}
+
+.bottom-info .info {
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: #1d1d1d;
+}
+
+.main-text {
+    font-size: 2.7rem;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.main-text span {
+    display: block;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    line-height: 18px;
+    margin-bottom: 3rem;
+    color: var(--sub-text);
+    width: 90%;
+    max-width: 500px;
+}
+
+.btn {
+    color: var(--text-color);
+    background: var(--main-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 600px) {
+    .text-content {
+        top: 26%;
+    }
+
+    .main-text {
+        font-size: 3.2rem;
+    }
+
+    .subtext {
+        max-width: 330px;
+    }
+
+    .bottom-info {
+        flex-direction: row;
+    }
+
+    .bottom-info .info {
+        margin: 0 1.5rem;
+    }
+
+    .bg-img img {
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 0);
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-content {
+        left: 7rem;
+    }
+
+    .main-text {
+        font-size: 5rem;
+        line-height: 65px;
+    }
+
+    .subtext {
+        font-size: 1.8rem;
+        line-height: 24px;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .main-text {
+        font-size: 6.2rem;
+        line-height: 75px;
+        margin-bottom: 1.3rem;
+    }
+
+    .btn-hero {
+        font-size: 1.8rem;
+    }
+
+    .bottom-info .info {
+        font-size: 2.5rem;
+    }
+
+    .subtext {
+        max-width: 500px;
+    }
+}

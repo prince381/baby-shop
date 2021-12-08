@@ -20,11 +20,12 @@
 
 :root {
     --main-background: #fff;
+    --text-color: #eee;
     --main-color: #ff173b;
     --main-font: 'Poppins', sans-serif;
     --logo-font: 'Quite Magical', serif;
     --bold-text: #2e2e2e;
-    --sub-text: #5e5e5e;
+    --sub-text: #e2e2e2;
 }
 
 html, body {
@@ -70,6 +71,10 @@ body.overlay::before {
 #app {
     width: 100vw;
     min-height: 100vh;
+}
+
+.container {
+    width: 100vw;
 }
 
 ul {
@@ -208,7 +213,7 @@ a {
     position: absolute;
     right: 25px;
     top: 50%;
-    width: 200px;
+    width: 190px;
     padding: 5px;
     border-radius: 4px;
     outline: none;
@@ -404,7 +409,7 @@ ul.responsive {
 
 @media (min-width: 1300px) {
     .page-nav {
-        padding: 1rem 5rem;
+        padding: 1rem 7rem;
     }
 
     .logo {
