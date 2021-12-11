@@ -1,3 +1,8 @@
+/*
+    HERO SECTION STYLING
+    --------------------
+*/
+
 .hero,
 .hero-content {
     width: 100%;
@@ -87,21 +92,306 @@
     max-width: 500px;
 }
 
-.btn {
-    color: var(--text-color);
+
+/*
+    HOW IT WORKS SECTION STYLING
+    ----------------------------
+*/
+
+.process,
+.shops,
+.shops-content {
+    width: 100%;
+}
+
+.process-content,
+.trending-content {
+    width: 90%;
+    margin: 5rem auto 0;
+}
+
+.new-arrivals {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0;
+    background: #ebeef5;
+    margin-top: 7rem;
+}
+
+.arrival-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.3rem;
+}
+
+.section-title.center {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto 5.2rem;
+    position: relative;
+}
+
+.section-title.center::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(.3);
+    width: 100%;
+    height: 4px;
     background: var(--main-color);
-    border: none;
-    padding: 1rem 2rem;
+}
+
+.flex-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 270px;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    max-width: 270px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1),
+                -1px -1px 2px rgba(0, 0, 0, .1);
     border-radius: 8px;
-    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.icon-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-img {
+    width: 100%;
+    height: 100%;
+}
+
+.ellipse {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+img.center-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 65px;
+    height: 65px;
+    transform: translate(-50%, -50%);
+}
+
+.card-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.3rem;
+}
+
+.shops-header a,
+.trend-header a {
+    display: none;
+}
+
+.shops-header,
+.trend-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrival-header {
+    width: 90%;
+    margin: 0 auto 2rem;
+}
+
+.shops {
+    width: 90%;
+    margin: 5rem auto 0;
+}
+
+.shop-img {
+    padding: .5rem 0;
+    background: var(--main-background);
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.selected-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected-show .show-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    position: relative;
+}
+
+.selected-show .show-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.selected-show .show-img:first-child::before {
+    display: none;
+}
+
+.view-all {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: var(--main-color);
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
+.selected-show .show-img img {
+    width: 100%;
+    height: 100%;
+}
 
+.selected-show .show-img:nth-child(3) {
+    display: none;
+}
 
-@media (min-width: 600px) {
+.shop-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-card {
+    width: 100%;
+    background: #e5e5e5;
+    padding: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.bottom-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.items-container,
+.items {
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrival-flex {
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrived {
+    width: 100%;
+    max-width: 314px;
+    height: 300px;
+    margin-bottom: 1.7rem;
+}
+
+.arrived img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 350px) {
+    .selected-show .show-img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    .selected-show .show-img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .selected-show .show-img:nth-child(3) {
+        display: block;
+    }
+
+    .selected-show .show-img:nth-child(2) a {
+        display: none;
+    }
+
+    .selected-show .show-img:nth-child(1)::before,
+    .selected-show .show-img:nth-child(2)::before {
+        display: none;
+    }
+
+    .bottom-link {
+        display: none;
+    }
+
+    .trending .bottom-link {
+        display: flex;
+    }
+
+    .shops-header a {
+        display: initial;
+    }
+
+    .shops-header,
+    .trend-header,
+    .arrival-header {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
     .text-content {
-        top: 26%;
+        top: 23%;
     }
 
     .main-text {
@@ -122,16 +412,111 @@
 
     .bg-img img {
         width: 100%;
-        height: 100%;
-        transform: translate(0, 0);
+        height: 120%;
+        transform: translate(0, -10%);
+    }
+
+    .card {
+        margin-left: 1rem;
+    }
+
+    .shops {
+        width: initial;
+        margin-left: 5%;
+        padding-right: 2rem;
+    }
+
+    .shops-header {
+        margin-right: 5%;
+    }
+
+    .shops-content {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        scrollbar-color: var(--text-color) transparent;
+        scrollbar-width: thin;
+    }
+
+    .shops-content::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .shop-flex {
+        flex-direction: row;
+    }
+
+    .shop-card {
+        width: 68vw;
+        max-width: 590px;
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .shop-card:last-child {
+        margin-right: 0;
+    }
+
+    .selected-show .show-img {
+        width: 15rem;
+        height: 15rem;
+        margin-right: 1.7rem;
+    }
+
+    .selected-show .show-img:last-child {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        margin-left: 2rem;
+    }
+
+    .card:first-of-type {
+        margin-left: 0;
+    }
+
+    .card:nth-of-type(3) {
+        margin-left: 0;
+    }
+
+    .trending-content {
+        margin-top: 7rem;
+    }
+
+    .trend-header a {
+        display: initial;
+    }
+
+    .trending .bottom-link {
+        display: none;
+    }
+
+    .items,
+    .arrival-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.7rem;
+    }
+
+    .arrived {
+        max-width: initial;
     }
 }
 
-@media (min-width: 1024px) {
-    .text-content {
-        left: 7rem;
+@media screen and (min-width: 950px) {
+    .card:nth-of-type(3) {
+        margin-left: 2rem;
     }
+}
 
+@media screen and (min-width: 1024px) {
     .main-text {
         font-size: 5rem;
         line-height: 65px;
@@ -144,7 +529,7 @@
     }
 }
 
-@media (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
     .main-text {
         font-size: 6.2rem;
         line-height: 75px;
@@ -152,15 +537,84 @@
     }
 
     .btn-hero {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .bottom-info .info {
         font-size: 2.5rem;
-        margin: 0 2.5rem;
+        margin: 0 7rem;
+    }
+
+    .bottom-info .info:first-child {
+        margin-left: 0;
+    }
+
+    .bottom-info .info:last-child {
+        margin-right: 0;
+    }
+
+    .text-content {
+        left: 7%;
+    }
+
+    .process-content,
+    .trending-content,
+    .arrival-header {
+        width: 86%;
+    }
+
+    .arrival-flex {
+        padding: 0 7%;
+    }
+
+    .shops {
+        width: initial;
+        margin-left: 7%;
+    }
+
+    .shops-header {
+        margin-right: 7%;
     }
 
     .subtext {
         max-width: 500px;
+    }
+
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .flex-items {
+        justify-content: space-between;
+    }
+
+    .card {
+        margin-left: 0;
+    }
+
+    .items {
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 1.7rem;
+    }
+
+    .new-arrivals {
+        padding-bottom: 4rem;
+    }
+
+    .arrival-flex {
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 1.7rem;
+        background: var(--main-background);
+    }
+
+    .arrived {
+        max-width: 314px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card,
+    .card:nth-of-type(3) {
+        margin-left: 3rem;
     }
 }
